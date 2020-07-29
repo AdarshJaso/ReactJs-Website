@@ -8,14 +8,14 @@ This project was build from scratch, it's meant to provide you with an idea of h
 
 # Dependencies Installed
 - Bootstrap 5 (alpha)
-	  - npm install bootstrap@5.0.0-alpha1
+	  1) npm install bootstrap@5.0.0-alpha1
 - SASS
-	  - npm install node-sass
+	  1) npm install node-sass
 - React Router
-	  - $ npm install --save react-router-dom
+	  1) $ npm install --save react-router-dom
 - Material-ui
-	  - npm install @material-ui/icons
-	  - npm install @material-ui/core
+	  1) npm install @material-ui/icons
+	  2) npm install @material-ui/core
 
 # Message to Githubers
 I welcome any kind of modifications and updates.
