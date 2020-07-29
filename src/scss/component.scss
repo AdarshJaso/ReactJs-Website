@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
+
+@import "../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* BUTTON-DEFAULT */
+
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+/* NAVBAR-DEFAULT */
+
+.navigation_bar {
+
+    @include media-breakpoint-up(lg) {
+      .navscroll.scrolled {
+          background-color: #121212 !important;
+          transition: background-color 400ms linear;
+    }
+  }
+
+    @include media-breakpoint-down(md) {
+      .navscroll {
+        background-color: #121212 !important;
+    }
+  }
+
+  @include media-breakpoint-between(md, lg) {
+      .navscroll {
+        background-color: #121212 !important;
+    }
+  }
+  
+  .navbar-light {
+    .navbar-toggler {
+      border-color: transparent !important;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      &:focus {
+        color: $orange !important;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #121212 !important;
+}
+
+/* NAVBAR SCROLL & FOOTER */
+
+/* VARIABLES & MIXINS */
+
+$orange: #ff4c00;
+$white: #ffffff;
+@mixin background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hdrcolor {
+  color: $orange;
+}
+
+.btn_custom {
+  background-color: $orange !important;
+  color: white !important;
+  border-radius: 2px !important;
+  min-width: 80px;
+}
+
+.btn_shadow {
+  box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.8) !important;
+}
+
+.box_border {
+  border: solid 1px #ececec !important;
+}
+
+.sec_bg {
+  backdrop-filter: opacity(0.4);
+}
+
+.secondary_header {
+  height: 300px;
+  width: 100%;
+}
+
+.sec_hdr {
+  background-image: url("../images/22.jpg");
+  @include background-image;
+}
+
+/* HOME PAGE */
+
+.sec_1 {
+  background-image: url("../images/44.jpg");
+  @include background-image;
+  .header_height {
+    height: 100vh;
+  }
+}
+
+.sec_2 {
+  background-image: url("../images/22.jpg");
+  @include background-image;
+}
+
+.brands_logo div {
+  max-width: 150px !important;
+}
+
+.shp {
+  width: 84px;
+  height: 84px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  text-align: center;
+  line-height: 84px;
+  position: absolute;
+  top: -42px;
+  left: 50%;
+  margin-left: -42px;
+  background: $orange;
+  color: $white;
+}
+
+.snip1534 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 230px;
+  width: 100%;
+  color: $white;
+  text-align: left;
+  font-size: 16px;
+  background-color: #000000;
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+  }
+  .img_caption {
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 76, 0, 0.85);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    padding: 20px;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      top: -20px;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 50%) rotate(45deg);
+      transform: translate(-50%, 50%) rotate(45deg);
+      position: absolute;
+    }
+  }
+}
+
+/* SERVICE PAGE */
+
+/* CAREER PAGE */
+
+.career_life {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: $orange;
+  height: 100%;
+  padding: 15px;
+  margin: auto 20px;
+  color: $white;
+}
+
+/* ABOUT PAGE */
+
+/* CONTACT PAGE */
+
+form {
+  input {
+    height: 55px !important;
+  }
+  input,
+  textarea {
+    outline: 0 !important;
+    box-shadow: none !important;
+    border: solid 1px #ececec !important;
+  }
+  .form_textarea {
+    max-height: 130px;
+    height: 130px !important;
+  }
+}

@@ -1,13 +1,13 @@
 import React from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
-import Home from "./Home";
-import Service from "./Service";
-import Contact from "./Contact";
-import About from "./About";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Career from "./Career";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import Home from "./pages/Home";
+import Service from "./pages/Service";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Navbar from "./pages/common/Navbar";
+import Footer from "./pages/common/Footer";
+import Career from "./pages/Career";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 const App = () => {
 	return (
@@ -26,7 +26,6 @@ const App = () => {
 
 		</BrowserRouter>
 		</>
-
 	);
 };
 

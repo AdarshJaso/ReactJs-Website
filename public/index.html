@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>React App</title>
-  </head>
-  <body>
-
-    <div id="root"></div>
-
-  </body>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel='icon' href='favicon.ico' type='image/x-icon' />
+      <title>React Website</title>
+   </head>
+   <body>
+      <div id="root"></div>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+      <script>
+         $(document).scroll(function () {
+           var $nav = $(".navscroll");
+           $nav.toggleClass('scrolled', $(this).scrollTop() > 120);
+         });
+      </script>
+      <script>
+         $(document).ready(function () {
+            $(document).click(function (event) {
+                var clickover = $(event.target);
+                var _opened = $(".navbar-collapse").hasClass("show");
+                if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                    $(".navbar-toggler").click();
+                }
+            });
+         });
+      </script>
+   </body>
 </html>
