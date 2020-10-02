@@ -16,12 +16,6 @@ This project was build from scratch, it's meant to provide you with an idea of h
 - Material-ui
 	  1) npm install @material-ui/icons
 	  2) npm install @material-ui/core
-
-# Message to Githubers
-I welcome any kind of modifications and updates.
-
+	  
 # Licence
 MIT (https://github.com/AdarshJaso/ReactJs-Website/blob/master/LICENSE)
-
-# Reach me for further talks
-E-mail : adarsh.jasoliya@gmail.com
